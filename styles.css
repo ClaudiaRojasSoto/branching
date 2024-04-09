@@ -73,3 +73,17 @@ form {
   border-radius: 0.3rem;
 }
 
+.light-theme {
+  background-color: #f8f9fa !important;
+  color: #333 !important;
+}
+
+#modal-content-full.light-theme {
+  color: #333 !important; 
+  background-color: #fff !important;
+}
+
+#staticBackdropLabel.light-theme {
+  color: #333 !important;
+}
+
