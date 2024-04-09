@@ -1,22 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Desafío Branching</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Space+Mono" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="container">
     <h1>Ir a Github</h1>
     <a href="https://github.com/" target="_blank">
       <img src="./629b7b3e7c5cd817694c3235.png" alt="octocat">
     </a>
-    <button type="button" class="btn">
-      <a href="#">Haz clic sobre el OCTOCAT!</a>
-    </button>
+
+    <!-- Button trigger modal -->
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button id="btn-modal" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Github y Octocat... Lo que debes saber
+      </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div id="modal-content-full" class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">GitHub: El emblemático Octocat impulsa el popular
+              ecosistema colaborativo de desarrollo.</h1>
+            <button type="button" id="btn-close" class="btn-close btn-light" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>La plataforma de desarrollo colaborativo de software GitHub facilita la gestión de proyectos y el control
+              de
+              versiones usando Git. Básicamente, permite a los desarrolladores cargar su código en repositorios,
+              colaborar
+              con otros, rastrear problemas y fusionar cambios de código en proyectos compartidos. GitHub ha sido
+              convertido en una herramienta imprescindible para millones de desarrolladores y empresas en todo el mundo
+              desde que fue lanzado por Tom Preston-Werner, Chris Wanstrath y PJ Hyett en 2008.</p>
+
+            <p>La plataforma actúa como un ecosistema para el código fuente, permitiendo a los usuarios contribuir a
+              proyectos existentes, bifurcar (fork) repositorios para crear proyectos derivados y proponer cambios
+              mediante solicitudes de extracción (pull requests). GitHub no solo alberga código, sino que también ofrece
+              funciones como GitHub Actions para la automatización de CI/CD, GitHub Pages para el hosting de sitios web
+              y
+              una variedad extensa de integraciones con otras herramientas y servicios.</p>
+
+            <p>Distintos tipos de usuarios, que incluyen desde programadores individuales y estudiantes hasta grandes
+              corporaciones como Google, Apple y Microsoft, hacen uso de GitHub. Proporciona repositorios públicos
+              gratuitos y opciones de suscripción pagadas para quienes necesiten repositorios privados o funciones
+              extra.</p>
+
+            <p>El Octocat es la mascota de GitHub, un gato encantador con tentáculos de pulpo. Simon Oxley, un diseñador
+              gráfico, creó esto como una obra de arte de stock. Después de que Tom Preston-Werner lo encontrara
+              mientras
+              buscaba imágenes de "gato pulpo", GitHub lo adoptó como su logotipo. Octocat no solo se ha convertido en
+              un
+              símbolo reconocible de GitHub, sino también en una figura apreciada por la comunidad de desarrolladores
+              desde entonces. Representa la fusión de dos características esenciales en el desarrollo de software: La
+              versatilidad y la curiosidad. Con el paso del tiempo, han aparecido diversas versiones del Octocat que
+              representan distintos aspectos de la comunidad de GitHub y celebran la diversidad en el ámbito del
+              desarrollo de software.</p>
+
+            <p>En resumen, GitHub no solamente aloja código, sino que también es un entorno colaborativo que fomenta la
+              innovación y facilita la gestión eficiente de proyectos, permitiendo así a la comunidad global de
+              desarrolladores colaborar de maneras antes inimaginables. Con su diseño único y su origen curioso, el
+              Octocat simboliza el espíritu creativo y colaborativo que impulsa a GitHub y su comunidad.</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary text-secondary bg-white" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
