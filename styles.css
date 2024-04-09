@@ -1,5 +1,5 @@
 body {
-  background: #342E37;
+  background: #342E37 !important;
   }
 
 .container {
@@ -7,7 +7,7 @@ body {
 } 
   
 h1 {
-  color: #fff;
+  color: #fff !important;
   font-family: 'Space Mono', monospace;
   font-size: 3rem;
   text-align: center;
@@ -31,15 +31,15 @@ form {
   cursor: pointer;
   display: block;
   position: relative;
-  background-color: #676264;
+  background-color: #676264 !important;
   padding: 20px 80px;
   margin: 0 auto;
   border-radius: 20px;
-  box-shadow: 0 6px #2E282A;
+  box-shadow: 0 6px #2E282A !important;
 }
   
 .btn a {
-    color: white;
+  color: white !important;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -56,4 +56,20 @@ form {
 .btn:active {
   box-shadow: none;
   top: 6px; 
-} 
+}
+
+#staticBackdropLabel{
+  color: white !important;
+}
+
+#btn-close {
+  color: white;
+  filter: invert(1) grayscale(1) brightness(2);
+}
+
+#modal-content-full {
+ color: white !important;
+  background-color: rgb(74, 74, 74) !important;
+  border-radius: 0.3rem;
+}
+
